@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+    timeout: 5000
+
+wechat:
+  appid: your_app_id  # 替换为你的微信开发者ID
+  secret: your_app_secret  # 替换为你的微信开发者密钥
+  redirectUri: http://localhost:8080/api/wechat/callback  # 微信授权回调地址 
